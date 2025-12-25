@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+.BG-section {
+  background-image: url("./assets/IronMan.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 390px;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cecccc;
+  border-radius: 5px;
+}
+
+.no-scrollbar {
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  display: none;
+  width: 0; /* Optional: also hides horizontal scrollbar for WebKit */
+  height: 0;
+}
+
+.shadow-Com {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 1280px) {
+  .shadow-left {
+    box-shadow: -6px 0 6px -6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .BG-section {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .movie-des {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .MovieCardCon {
+    padding: 10px;
+  }
+
+  .footerCon {
+    flex-direction: column;
+  }
+
+  .overviewSeachMovie {
+    font-size: 0.8rem;
+  }
+}
