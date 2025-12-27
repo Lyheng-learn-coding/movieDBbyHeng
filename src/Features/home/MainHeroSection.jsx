@@ -86,7 +86,7 @@ function MainHeroSection({ url, mediaType }) {
 
   return (
     <>
-      <section className="relative w-full h-screen text-white group overflow-hidden ">
+      <section className="relative w-full md:h-screen h-[70vh] mt-15 text-white group overflow-hidden ">
         {/* Background Image with Fade Transition */}
         <div className="absolute inset-0 transition-opacity duration-700 ease-in-out">
           <div
@@ -106,7 +106,7 @@ function MainHeroSection({ url, mediaType }) {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col justify-center h-full px-5 md:px-12 max-w-[900px]">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight animate-slideUp">
+          <h1 className="text-3xl md:text-6xl font-bold mb-4 leading-tight animate-slideUp">
             {currentMovie.title || currentMovie.name}
           </h1>
 
@@ -184,14 +184,24 @@ function MainHeroSection({ url, mediaType }) {
           closeTrailer={closeTrailer}
           movieId={currentMovie.id}
           movieTitle={currentMovie.title || currentMovie.name}
-          mediaType={mediaType || currentMovie.media_type || (currentMovie.title ? 'movie' : 'tv')}
+          mediaType={
+            mediaType ||
+            currentMovie.media_type ||
+            (currentMovie.title ? "movie" : "tv")
+          }
         />
       )}
     </>
   );
 }
 
-function WatchTrailer({ movieId, isOpenTrailer, closeTrailer, movieTitle, mediaType }) {
+function WatchTrailer({
+  movieId,
+  isOpenTrailer,
+  closeTrailer,
+  movieTitle,
+  mediaType,
+}) {
   const [videoKey, setVideoKey] = useState(null);
 
   const url = `https://api.themoviedb.org/3/${mediaType}/${movieId}/videos?api_key=e7647e37d4a34ff0aad4bee7f30b20de`;

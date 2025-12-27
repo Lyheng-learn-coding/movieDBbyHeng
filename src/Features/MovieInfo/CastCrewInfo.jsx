@@ -89,7 +89,7 @@ function CastInfo({ castcrewid }) {
     <>
       <Navbar />
       <section className="xl:px-20  max-w-[1600px] m-auto pt-24 my-10">
-        <div className="full  flex xl:flex-row flex-col px-5 gap-10 ">
+        <div className="full  flex xl:flex-row flex-col px-3 gap-10 ">
           <div className=" xl:w-[400px] w-full">
             <img
               key={profile}
@@ -106,10 +106,10 @@ function CastInfo({ castcrewid }) {
               person={formattedData.personalinfo}
             />
 
-            <h2 className="text-xl font-medium mb-5 md:mt-0 mt-5">
+            <h2 className="text-xl font-medium mb-5 md:mt-0 mt-5  text-justify  ">
               Biography
               <br />
-              <span className="text-[1rem] font-normal">{biography}</span>
+              <span className="text-[1rem] font-normal ">{biography}</span>
             </h2>
             <h2 className="text-xl font-medium">Known For</h2>
             <div className="w-full">
@@ -128,7 +128,7 @@ function PersonalAndActing({ bothInfo }) {
   const { personalinfo, workinfo } = bothInfo;
   return (
     <>
-      <section className={`flex gap-5 mt-20  px-5`}>
+      <section className={`flex gap-5 mt-5  px-5`}>
         {/* for desktop  */}
         <PersonalInfo class1="md:block hidden" person={personalinfo} />
 
@@ -279,31 +279,5 @@ function ActingYear({ work }) {
     </>
   );
 }
-
-// function DisplayMovieCard({
-//   movieId,
-//   posterImage,
-//   movieName,
-//   date,
-//   class1,
-//   class2,
-// }) {
-//   return (
-//     <>
-//       <div
-//         className={`element-with-x-scroll pb-10 mt-2.5 flex overflow-x-auto snap-always snap-mandatory scroll-smooth gap-5 md:max-w-[1100px]  ${class1} ${class2} `}
-//       >
-//         <div className="snap-start shrink-0 w-[50%] md:w-1/7">
-//           <img src={posterImage} alt="" className="rounded-xl w-full " />
-
-//           <div>
-//             <h2 className="font-bold mt-1">{movieName}</h2>
-//             <p className="font-light text-[0.8rem] ">{date}</p>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
 
 export default CastInfo;

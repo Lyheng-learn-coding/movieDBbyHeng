@@ -146,7 +146,7 @@ function MovieDescription({ movie, movieId }) {
   return (
     <>
       <div
-        className="bg-cover bg-no-repeat mt-20 py-10 relative"
+        className="bg-cover bg-no-repeat mt-17 py-10 relative"
         style={{ backgroundImage: `url(${imageUrl})` }}
       >
         <div className="flex xl:flex-row flex-col w-full h-full p-5  sm:px-20 px-5 gap-7 after:absolute  after:bg-black/50 after:inset-0">
@@ -186,7 +186,7 @@ function MovieDescription({ movie, movieId }) {
           </div>
         </div>
       </div>
-      <div className="p-5 xl:px-20 w-full">
+      <div className="p-2.5 xl:px-20 w-full pt-5 mb-5">
         <h1 className="text-2xl font-medium">Top Billed Cast</h1>
         <div className="flex xl:flex-row flex-col">
           <div className="w-full">

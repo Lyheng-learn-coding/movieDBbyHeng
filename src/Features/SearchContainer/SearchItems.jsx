@@ -44,8 +44,8 @@ function SearchItems() {
 
   return (
     <>
-      <section className="flex flex-row justify-center  gap-8 my-30 w-full max-w-[1600px] m-auto xl:px-20 px-10">
-        <div className="no-scrollbar flex md:flex-col flex-row md:w-[350px] w-full md:h-full h-[100px] md:mt-0 mt-20 md:rounded-xl bg-white border border-gray-300 md:sticky fixed top-0 overflow-x-auto">
+      <section className="flex flex-row justify-center  gap-8 mt-30 mb-10 w-full max-w-[1600px] m-auto xl:px-20 px-2.5">
+        <div className="no-scrollbar flex md:flex-col flex-row md:w-[350px] w-full md:h-full h-[100px] md:mt-0  mt-17 md:rounded-xl bg-white border border-gray-300 md:sticky fixed top-0 overflow-x-auto">
           <h1 className="bg-[#01b4e4] p-5 rounded-t-xl text-lg text-white hidden md:block">
             Search Result
           </h1>

@@ -68,7 +68,7 @@ function TvSeries() {
           mediaType="tv"
         />
         <section className="w-full">
-          <div className="grid md:grid-cols-5 grid-cols-2  w-full gap-5 py-10 md:px-20 px-5">
+          <div className="grid md:grid-cols-5 grid-cols-2  w-full md:gap-5 gap-2.5 pb-5 pt-10 md:px-20 px-2.5">
             {data.map((m) => (
               <MovieCard
                 key={m.id}
@@ -83,7 +83,7 @@ function TvSeries() {
               />
             ))}
           </div>
-          <div className="w-full flex justify-center mb-10 md:px-20 px-5">
+          <div className="w-full flex justify-center mb-5 md:px-20 px-2.5">
             <button
               onClick={() => setPage((prev) => (prev += 1))}
               disabled={loading}

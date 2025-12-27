@@ -81,7 +81,7 @@ function Navbar({ isLoading }) {
           <LinearIndeterminate />
         </div>
       )}
-      <nav className="fixed top-0 left-0 w-full py-5 md:px-12 px-5    bg-[#032541] flex justify-between items-center gap-2.5 shadow-md z-50 text-white">
+      <nav className="fixed top-0 left-0 w-full py-5 md:px-12 px-5  bg-[#032541] flex justify-between items-center gap-2.5 shadow-md z-50 text-white">
         <div className="flex gap-3 items-center">
           <button className="flex xl:hidden text-[1.5rem]" onClick={toggleMenu}>
             <GiHamburgerMenu />

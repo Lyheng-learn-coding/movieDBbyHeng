@@ -12,9 +12,9 @@ function HeroSection() {
       <section className="w-full h-full mt-[30px] ">
         <div className="relative text-white backdrop-blur-[20px]">
           <img src={IronMan} alt="" className="w-full h-[400px] object-cover" />
-          <div className="absolute z-20 top-30 xl:pl-30 pl-5">
+          <div className="absolute z-20 top-30 xl:pl-30 md:p-5 p-2.5">
             <h1 className="xl:text-[3rem] text-[2.5rem] font-bold">Welcome.</h1>
-            <h2 className="xl:text-[2rem] text-[1.7rem] font-medium">
+            <h2 className="xl:text-[2rem] text-[1.5rem] font-light">
               Millions of movies, TV shows and people to discover. Explore now.
             </h2>
           </div>

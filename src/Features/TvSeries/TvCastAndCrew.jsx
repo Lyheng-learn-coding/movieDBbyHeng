@@ -66,8 +66,8 @@ function TvCastAndCrew({ id }) {
   return (
     <>
       <Navbar showCurrentLinkTV="text-[#01b4e4]" />
-      <section className="w-full h-full pt-[90px] max-w-[1600px] m-auto">
-        <div className="bg-[#4a4a4a] p-5 w-full px-10 flex gap-5 ">
+      <section className="w-full h-full xl:mt-[85px] md:mt-[70px] mt-[90px]  max-w-[1600px] m-auto">
+        <div className="bg-[#4a4a4a] py-5 md:px-10 px-5 w-full  flex gap-5  md:mt-0 -mt-5">
           <Link to={`/tvinfo/${id}`}>
             <img
               src={posterUrl}
@@ -79,14 +79,14 @@ function TvCastAndCrew({ id }) {
             <h1 className="font-bold text-white text-3xl">{title}</h1>
             <Link
               to={`/tvinfo/${id}`}
-              className="text-gray-300 hover:text-white underline flex items-center gap-2.5"
+              className="text-gray-300 hover:text-white  flex items-center gap-2.5"
             >
               <FaArrowLeft className="-mb-1" /> Back to main
             </Link>
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 grid-cols-1 w-full gap-10 p-10">
+        <div className="grid sm:grid-cols-2 grid-cols-1 w-full gap-10 md:p-10 p-2.5">
           {/* Cast Section */}
           <div>
             <h2 className="text-2xl font-bold mb-5">
